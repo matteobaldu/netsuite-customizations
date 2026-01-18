@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_demo_per_status">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Demo Personio Status</name>
+  <customvalues>
+    <customvalue scriptid="val_19064_71182_sb1_319">
+      <isinactive>F</isinactive>
+      <value>PENDING</value>
+    </customvalue>
+    <customvalue scriptid="val_19065_71182_sb1_783">
+      <isinactive>F</isinactive>
+      <value>PROCESSING</value>
+    </customvalue>
+    <customvalue scriptid="val_19066_71182_sb1_866">
+      <isinactive>F</isinactive>
+      <value>SUCCESS</value>
+    </customvalue>
+    <customvalue scriptid="val_19067_71182_sb1_747">
+      <isinactive>F</isinactive>
+      <value>FAILED</value>
+    </customvalue>
+  </customvalues>
+</customlist>

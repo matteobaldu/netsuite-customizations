@@ -1,0 +1,54 @@
+<scheduledscript scriptid="customscript_demo_per_import_trigger">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Demo Personio Import Trigger</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/connect/personio/connect/import_trigger.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_demo_per_trigger_orchestrator">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>SELECT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Orchestrator</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete>NO_ACTION</onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype>[scriptid=customrecord_demo_per_orchestrator]</selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_demo_per_import_trigger">
+      <custscript_demo_per_trigger_orchestrator></custscript_demo_per_trigger_orchestrator>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>Demo Personio Import Trigger</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2021-12-01</startdate>
+          <starttime>18:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

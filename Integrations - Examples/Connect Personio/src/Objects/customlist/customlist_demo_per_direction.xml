@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_demo_per_direction">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Demo Personio Direction</name>
+  <customvalues>
+    <customvalue scriptid="val_18997_71182_sb1_509">
+      <isinactive>F</isinactive>
+      <value>In</value>
+    </customvalue>
+    <customvalue scriptid="val_18998_71182_sb1_695">
+      <isinactive>F</isinactive>
+      <value>Out</value>
+    </customvalue>
+  </customvalues>
+</customlist>

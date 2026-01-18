@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_demo_per_trigger_type">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Demo Personio Trigger Type</name>
+  <customvalues>
+    <customvalue scriptid="val_19003_71182_sb1_798">
+      <isinactive>F</isinactive>
+      <value>Scheduled</value>
+    </customvalue>
+    <customvalue scriptid="val_19004_71182_sb1_729">
+      <isinactive>F</isinactive>
+      <value>Event</value>
+    </customvalue>
+    <customvalue scriptid="val_19005_71182_sb1_427">
+      <isinactive>F</isinactive>
+      <value>External Event</value>
+    </customvalue>
+  </customvalues>
+</customlist>

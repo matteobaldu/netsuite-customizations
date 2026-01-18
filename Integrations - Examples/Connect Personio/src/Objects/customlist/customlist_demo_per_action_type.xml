@@ -1,0 +1,12 @@
+<customlist scriptid="customlist_demo_per_action_type">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Demo Personio Action Type</name>
+  <customvalues>
+    <customvalue scriptid="val_55443_71182_sb1_838">
+      <isinactive>F</isinactive>
+      <value>employees</value>
+    </customvalue>
+  </customvalues>
+</customlist>

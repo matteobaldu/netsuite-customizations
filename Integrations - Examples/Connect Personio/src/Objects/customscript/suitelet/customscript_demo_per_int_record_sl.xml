@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_demo_per_int_record_sl">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Demo Personio Integration Record SL</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/connect/personio/connect/ui/integration_record/integration_record_sl.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_demo_per_int_record_sl">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>TESTING</status>
+      <title>Demo Personio Integration Record SL</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

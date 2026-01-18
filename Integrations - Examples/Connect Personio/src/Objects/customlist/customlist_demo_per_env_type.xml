@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_demo_per_env_type">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Demo Personio Environment Type</name>
+  <customvalues>
+    <customvalue scriptid="val_27541_71182_sb1_117">
+      <isinactive>F</isinactive>
+      <value>Production</value>
+    </customvalue>
+    <customvalue scriptid="val_27542_71182_sb1_797">
+      <isinactive>F</isinactive>
+      <value>Sandbox</value>
+    </customvalue>
+  </customvalues>
+</customlist>

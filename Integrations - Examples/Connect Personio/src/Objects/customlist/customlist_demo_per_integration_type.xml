@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_demo_per_integration_type">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Demo Personio Integration Type</name>
+  <customvalues>
+    <customvalue scriptid="val_19073_71182_sb1_351">
+      <isinactive>F</isinactive>
+      <value>Saved Search</value>
+    </customvalue>
+    <customvalue scriptid="val_19121_71182_sb1_196">
+      <isinactive>F</isinactive>
+      <value>Transaction</value>
+    </customvalue>
+    <customvalue scriptid="val_19845_71182_sb1_823">
+      <isinactive>F</isinactive>
+      <value>Item</value>
+    </customvalue>
+    <customvalue scriptid="val_19852_71182_sb1_183">
+      <isinactive>F</isinactive>
+      <value>Customer</value>
+    </customvalue>
+  </customvalues>
+</customlist>

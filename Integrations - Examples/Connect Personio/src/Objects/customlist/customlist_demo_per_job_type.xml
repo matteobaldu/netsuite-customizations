@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_demo_per_job_type">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Demo Personio Job Type</name>
+  <customvalues>
+    <customvalue scriptid="val_21352_71182_sb1_867">
+      <isinactive>F</isinactive>
+      <value>Import</value>
+    </customvalue>
+    <customvalue scriptid="val_21353_71182_sb1_332">
+      <isinactive>F</isinactive>
+      <value>Process</value>
+    </customvalue>
+  </customvalues>
+</customlist>
