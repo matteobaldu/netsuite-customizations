@@ -1,10 +1,10 @@
 /**
- * @NApiVersion 2.0
+ * @NApiVersion 2.1
  * @NScriptType clientScript
  * @NModuleScope Public
  *
  * Version    Date          Author                 Remarks
- * 1.00       MAY 19        matteo balduccio       Initial Commit
+ * 1.00       MAY 19        Matteo Balduccio       Initial Commit
  *
  */
 
@@ -46,7 +46,7 @@ define(['N/url', 'N/ui/message', 'N/format', 'N/runtime'],
           };
 
           let output = url.resolveScript({
-            scriptId: 'customscript_acs_sl_estimate_without_so',
+            scriptId: 'customscript_sl_estimate_without_so',
             deploymentId: 'customdeploy1',
             returnExternalUrl: false,
             params: parameters

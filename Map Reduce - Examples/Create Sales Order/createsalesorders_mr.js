@@ -1,20 +1,11 @@
 /**
- * Copyright (c) 1998-2022 NetSuite, Inc.
- * 2955 Campus Drive, Suite 100, San Mateo, CA, USA 94403-2511
- * All Rights Reserved.
- *
- * This software is the confidential and proprietary information of
- * NetSuite, Inc. ("Confidential Information"). You shall not
- * disclose such Confidential Information and shall use it only in
- * accordance with the terms of the license agreement you entered into
- * with NetSuite.
  *
  * @NApiVersion 2.1
  * @NScriptType MapReduceScript
  * @NModuleScope Public
  *
  * Version    Date          Author                          Remarks
- * 1.00       8/4/2022      Matteo Balduccio                Initial Version, case #4788994 
+ * 1.00       8/4/2022      Matteo Balduccio                Initial Version
  */
 
 define(['N/record', 'N/runtime', 'N/search', 'N/email'],
@@ -22,7 +13,7 @@ define(['N/record', 'N/runtime', 'N/search', 'N/email'],
 
         function getInputData() {
             let stMethodName = 'getInputData',
-                stSavedSearchId = runtime.getCurrentScript().getParameter('custscript_acs_input_data_ss'),
+                stSavedSearchId = runtime.getCurrentScript().getParameter('custscript_input_data_ss'),
                 objSearch,
                 index,
                 item,
@@ -57,8 +48,8 @@ define(['N/record', 'N/runtime', 'N/search', 'N/email'],
 
         function map(context) {
             let stMethodName = 'Map',
-                customerSO = runtime.getCurrentScript().getParameter('custscript_acs_customer_so'),
-                taxCodeSO = runtime.getCurrentScript().getParameter('custscript_acs_taxcode_so'),
+                customerSO = runtime.getCurrentScript().getParameter('custscript_customer_so'),
+                taxCodeSO = runtime.getCurrentScript().getParameter('custscript_taxcode_so'),
                 searchResult,
                 item,
                 itemKDP,
@@ -99,7 +90,7 @@ define(['N/record', 'N/runtime', 'N/search', 'N/email'],
                         if (itemKDP) {
                             soRecord.setCurrentSublistValue({
                                 sublistId: 'item',
-                                fieldId: 'custcol_acs_vend_item',
+                                fieldId: 'custcol_vend_item',
                                 value: itemKDP
                             });
                         }
@@ -154,8 +145,8 @@ define(['N/record', 'N/runtime', 'N/search', 'N/email'],
 
             try {
 
-                    let emailRecipient = runtime.getCurrentScript().getParameter('custscript_acs_email_recepient'),
-                    emailSender = runtime.getCurrentScript().getParameter('custscript_acs_email_sender')
+                    let emailRecipient = runtime.getCurrentScript().getParameter('custscript_email_recepient'),
+                    emailSender = runtime.getCurrentScript().getParameter('custscript_email_sender')
 
 
                 if (emailRecipient) {

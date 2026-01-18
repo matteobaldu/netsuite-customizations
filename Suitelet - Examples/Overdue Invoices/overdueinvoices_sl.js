@@ -2,9 +2,9 @@
 * @NApiVersion 2.1
 * @NScriptType Suitelet
 */
-define(['N/format', 'N/redirect', 'N/record', 'N/search','N/ui/serverWidget', 'N/url', './overdueinvoices'],
+define(['N/redirect', 'N/record', 'N/search','N/ui/serverWidget', 'N/url', './overdueinvoices'],
 
-(Format, Redirect, Record, Search, serverWidget, Url, OverdueInvoices) => {
+(Redirect, Record, serverWidget, Url, OverdueInvoices) => {
 
     const onRequest = (scriptContext) => {
         if (scriptContext.request.method === 'POST') {

@@ -1,10 +1,10 @@
 /**
- * @NApiVersion 2.0
+ * @NApiVersion 2.1
  * @NScriptType Suitelet
  * @NModuleScope Public
  *
- * Version    Date          Author        Remarks
- * 1.00       [date]        [User]        Initial Commit
+ * Version    Date          Author                 Remarks
+ * 1.00       MAY 19        Matteo Balduccio       Initial Commit
  *
  */
 
@@ -61,7 +61,7 @@ define(['N/http', 'N/ui/serverWidget', 'N/record', 'N/runtime', 'N/log', 'N/sear
                 });
                 scheduledScript.scriptId = scheduleScriptId;
                 //scheduledScript.deploymentId = scheduleScriptDeploymentId;
-                scheduledScript.params = { 'custscript861_acs_estimatesid': stLinesChecked };
+                scheduledScript.params = { 'custscript861_estimatesid': stLinesChecked };
 
                 // Submit the task
                 let asyncTaskId = scheduledScript.submit();
@@ -532,12 +532,12 @@ define(['N/http', 'N/ui/serverWidget', 'N/record', 'N/runtime', 'N/log', 'N/sear
         try {
             let script = runtime.getCurrentScript();
             let objParams = {
-                clientScriptId: script.getParameter('custscript832_acs_clientscriptid'),
-                scheduleScriptId: script.getParameter('custscript832_acs_schedulescriptid'),
-                scheduleScriptDeploymentId: script.getParameter('custscript832_acs_schedulescriptdeployid'),
-                ssEstimatesWith: script.getParameter('custscript832_acs_ssestimateswith'),
-                suiteletTitle: script.getParameter('custscript832_acs_suitelettitle'),
-                pageSize: script.getParameter('custscript832_acs_pagesize'),
+                clientScriptId: script.getParameter('custscript832_clientscriptid'),
+                scheduleScriptId: script.getParameter('custscript832_schedulescriptid'),
+                scheduleScriptDeploymentId: script.getParameter('custscript832_schedulescriptdeployid'),
+                ssEstimatesWith: script.getParameter('custscript832_ssestimateswith'),
+                suiteletTitle: script.getParameter('custscript832_suitelettitle'),
+                pageSize: script.getParameter('custscript832_pagesize'),
             }
 
             return objParams;

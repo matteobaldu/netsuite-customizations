@@ -9,31 +9,10 @@ function(CurrentRecord, Format, Url) {
 
     const sublistId = 'custpage_sublist';
 
-    /**
-     * Function to be executed after page is initialized.
-     *
-     * @param {Object} scriptContext
-     * @param {Record} scriptContext.currentRecord - Current form record
-     * @param {string} scriptContext.mode - The mode in which the record is being accessed (create, copy, or edit)
-     *
-     * @since 2015.2
-     */
     function pageInit(scriptContext) {
         window.onbeforeunload = null;
     }
 
-    /**
-     * Function to be executed when field is changed.
-     *
-     * @param {Object} scriptContext
-     * @param {Record} scriptContext.currentRecord - Current form record
-     * @param {string} scriptContext.sublistId - Sublist name
-     * @param {string} scriptContext.fieldId - Field name
-     * @param {number} scriptContext.lineNum - Line number. Will be undefined if not a sublist or matrix field
-     * @param {number} scriptContext.columnNum - Line number. Will be undefined if not a matrix field
-     *
-     * @since 2015.2
-     */
     function fieldChanged(scriptContext) {
         let fields = ['custpage_inv_subsidiary', 'custpage_inv_account', 'custpage_inv_period', 'custpage_inv_date_from' , 'custpage_inv_date_to' , 'custpage_inv_duedate_from' ,'custpage_inv_duedate_to']
         let currentRecord = scriptContext.currentRecord;
@@ -62,15 +41,6 @@ function(CurrentRecord, Format, Url) {
         location.reload();
     }
 
-    /**
-     * Validation function to be executed when record is saved.
-     *
-     * @param {Object} scriptContext
-     * @param {Record} scriptContext.currentRecord - Current form record
-     * @returns {boolean} Return true if record is valid
-     *
-     * @since 2015.2
-     */
     function saveRecord(scriptContext) {
 
         let suitelet = CurrentRecord.get();

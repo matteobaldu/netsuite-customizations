@@ -2,9 +2,9 @@
  * @NApiVersion 2.1
  * @NScriptType MapReduceScript
  */
-define(['N/record', 'N/runtime', 'N/url', './overdueinvoices', './lib/status'],
+define(['N/record', 'N/runtime', './overdueinvoices', './lib/status'],
 
-    (Record, Runtime, Url, OverdueInvoices, Status) => {
+    (Record, Runtime, OverdueInvoices, Status) => {
 
         const getInputData = (inputContext) => {
             let scriptObj = Runtime.getCurrentScript();
@@ -27,7 +27,6 @@ define(['N/record', 'N/runtime', 'N/url', './overdueinvoices', './lib/status'],
         }
 
         const map = (mapContext) => {
-            //log.debug('mapContext', mapContext);
             try {
                 let result = {
                     status: Status.SUCCESS,

@@ -1,10 +1,10 @@
 /**
- * @NApiVersion 2.0
+ * @NApiVersion 2.1
  * @NScriptType scheduledScript
  * @NModuleScope Public
  *
- * Version    Date          Author        Remarks
- * 1.00       [date]        [User]        Initial Commit
+ * Version    Date          Author                 Remarks
+ * 1.00       MAY 19        Matteo Balduccio       Initial Commit
  *
  */
 
@@ -30,7 +30,7 @@ define([ 'N/runtime', 'N/record'], function (runtime, record) {
             //Get parameters from Suitelet (click on Search)
             let script = runtime.getCurrentScript();
 
-            let estimatesId = script.getParameter('custscript861_acs_estimatesid');
+            let estimatesId = script.getParameter('custscript861_estimatesid');
             let objEstimatesId = JSON.parse(estimatesId);
             let objEstimatesId2 = JSON.parse(objEstimatesId);
             let objCount =  objEstimatesId2.length

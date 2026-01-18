@@ -1,6 +1,8 @@
 /**
  * @NApiVersion 2.1
  * @NScriptType MapReduceScript
+ * Version    Date          Author                          Remarks
+ * 1.00       10/5/2024     Matteo Balduccio                Initial Version
  */
 define(['N/record', 'N/search'],
 
